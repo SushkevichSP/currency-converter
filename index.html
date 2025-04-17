@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Конвертер валют</h1>
+    </header>
+
+    <main class="container">
+        <div class="converter">
+            <div class="loader" id="loader" hidden>
+                <div class="spinner"></div>
+                <p>Загрузка курсов валют...</p>
+            </div>
+
+            <form id="converter-form">
+                <div class="input-group">
+                    <input type="number" 
+                           id="amount" 
+                           min="0" 
+                           step="0.01" 
+                           required 
+                           placeholder="Введите сумму">
+                    
+                    <select id="from-currency" required>
+                        <option value="">Выберите валюту</option>
+                    </select>
+                </div>
+
+                <button type="button" id="swap-button" class="swap-button">
+                    ⇄
+                </button>
+
+                <div class="input-group">
+                    <input type="number" 
+                           id="result" 
+                           readonly 
+                           placeholder="Результат">
+                    
+                    <select id="to-currency" required>
+                        <option value="">Выберите валюту</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="convert-button">Конвертировать</button>
+            </form>
+
+            <div class="rate-info" id="rate-info"></div>
+        </div>
+        <div id="error-message" class="error" style="display: none; color: red;"></div>
+    </main>
+
+    <footer>
+        <p>Курсы валют обновляются в реальном времени</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
