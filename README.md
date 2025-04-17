@@ -27,7 +27,7 @@
 
 ## Демо
 
-[Посмотреть демо](https://your-username.github.io/currency-converter/)
+[Посмотреть демо](https://SushkevichSP.github.io/currency-converter/)
 
 ## Установка
 
