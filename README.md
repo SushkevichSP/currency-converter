@@ -48,4 +48,4 @@ MIT License
 
 ## Связь
 
-- GitHub: [@SushkevichSP](https://github.com/your-username) 
+- GitHub: [@SushkevichSP](https://github.com/SushkevichSP) 
